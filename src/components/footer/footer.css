@@ -1,0 +1,62 @@
+ul li {
+    list-style-type: none;
+} 
+
+.footer{
+    background-color: rgb(255, 115, 0);
+    height: 10vh;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer__container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__links{
+    display: flex;
+    gap: 30px;
+
+    &:hover{
+      text-decoration: underline;
+    }
+}
+
+.footer__copy a {
+    padding-left: 50px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    position: relative; 
+}
+  
+
+.footer__links a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer__links a {
+    display: inline-block; 
+    position: relative;
+    cursor: pointer;
+  
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0; 
+      height: 2px; 
+      background-color: #ffffff; 
+      transition: width 0.3s ease; 
+    }
+  
+    &:hover::after {
+      width: 100%; 
+    }
+  }
